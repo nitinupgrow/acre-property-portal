@@ -21,7 +21,7 @@ const HomePage = () => {
       frontage: "60 feet",
       depth: "207 feet",
       nearby: ["DPS Public School", "St.Xavier School", "Hrit University", "Metro Station"],
-      type: "Residential",
+      type: "Commercial",
       featured: true
     },
     {
@@ -34,12 +34,12 @@ const HomePage = () => {
       frontage: "250 feet",
       depth: "250 feet",
       nearby: ["DPS Public School", "St.Xavier School", "Hrit University", "Metro Station"],
-      type: "Residential",
+      type: "Commercial",
       featured: true
     },
     {
       id: 3,
-      title: "Industrial Plot",
+      title: "A3 Property",
       image: "https://images.unsplash.com/photo-1553970541-039c88965124?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       hidePrice: true,
       location: "Raj Nagar Extension Face 2nd, Ghaziabad",
@@ -52,11 +52,14 @@ const HomePage = () => {
     },
     {
       id: 4,
-      title: "Beachfront Apartment",
+      title: "A4 Property",
       image: "https://images.unsplash.com/photo-1560448204-603b3fc33ddc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      price: "$950,000",
-      location: "Miami, FL",
-      size: "1800",
+      price: "$250,000",
+      location: "Mortha, Ghaziabad",
+      size: "100",
+      frontage: "25 feet",
+      depth: "45 feet",
+      nearby: ["Universal Society"],
       type: "Residential"
     }
   ]);
@@ -106,7 +109,7 @@ const HomePage = () => {
               <div className="mt-4 bg-secondary p-4 rounded-lg">
                 <p className="font-medium">90acre Real Estate</p>
                 <p>123 Real Estate Avenue, Property City, 12345</p>
-                <p>Email: info@90acre.com | Phone: +9911288282</p>
+                <p>Email: contact@90acre.com | Phone: +9911288282</p>
               </div>
             </div>
           </div>

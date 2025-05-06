@@ -1,10 +1,10 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import SectionHeading from '@/components/SectionHeading';
-import { MapPin, Home, Phone, MessageCircle, ArrowLeft, ArrowRight } from 'lucide-react';
+import { MapPin, Home, Phone, MessageCircle, ArrowLeft } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 // Mock property data - in a real app, you'd fetch this from an API
@@ -20,12 +20,12 @@ const properties = [
     price: "$1,250,000",
     location: "Raj Nagar Extension, Ghaziabad",
     size: "12420",
-    type: "Residential",
+    type: "Commercial",
     featured: true,
     frontage: "60 feet",
     depth: "207 feet",
     nearby: ["DPS Public School", "St.Xavier School", "Hrit University", "Metro Station"],
-    description: "A premium residential plot in one of the most sought-after locations in Raj Nagar Extension, Ghaziabad. With a generous frontage of 60 feet and depth of 207 feet, this property offers ample space for building your dream home. Surrounded by excellent educational institutions and with convenient access to the Metro Station, this property combines the best of comfort and connectivity.",
+    description: "A premium commercial plot in one of the most sought-after locations in Raj Nagar Extension, Ghaziabad. With a generous frontage of 60 feet and depth of 207 feet, this property offers ample space for building your dream commercial space. Surrounded by excellent educational institutions and with convenient access to the Metro Station, this property combines the best of commerce and connectivity.",
     amenities: ["Corner Plot", "Wide Roads", "Gated Community", "24/7 Security", "Water Supply", "Electricity"],
     agent: {
       name: "Rahul Sharma",
@@ -45,12 +45,12 @@ const properties = [
     price: "$1,850,000",
     location: "Raj Nagar Extension, Ghaziabad",
     size: "6100",
-    type: "Residential",
+    type: "Commercial",
     featured: true,
     frontage: "250 feet",
     depth: "250 feet",
     nearby: ["DPS Public School", "St.Xavier School", "Hrit University", "Metro Station"],
-    description: "A prestigious residential plot situated in the prime location of Raj Nagar Extension, Ghaziabad. This exceptional property features an impressive frontage of 250 feet and depth of 250 feet, providing abundant space for custom home building. The property enjoys close proximity to top educational institutions and convenient access to transportation, making it an ideal investment for families.",
+    description: "A prestigious commercial plot situated in the prime location of Raj Nagar Extension, Ghaziabad. This exceptional property features an impressive frontage of 250 feet and depth of 250 feet, providing abundant space for custom commercial development. The property enjoys close proximity to top educational institutions and convenient access to transportation, making it an ideal investment for businesses.",
     amenities: ["Prime Location", "Wide Roads", "Gated Community", "24/7 Security", "Water Supply", "Electricity", "Park View"],
     agent: {
       name: "Rahul Sharma",
@@ -61,7 +61,7 @@ const properties = [
   },
   {
     id: 3,
-    title: "Industrial Plot",
+    title: "A3 Property",
     images: [
       "https://images.unsplash.com/photo-1553970541-039c88965124?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
@@ -87,23 +87,26 @@ const properties = [
   },
   {
     id: 4,
-    title: "Beachfront Apartment",
+    title: "A4 Property",
     images: [
       "https://images.unsplash.com/photo-1560448204-603b3fc33ddc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     ],
-    price: "$950,000",
-    location: "Miami, FL",
-    size: "1800",
+    price: "$250,000",
+    location: "Mortha, Ghaziabad",
+    size: "100",
     type: "Residential",
-    description: "Luxurious beachfront apartment with stunning ocean views. Modern interiors, premium amenities, and a prime location make this property an ideal vacation home or investment opportunity.",
-    amenities: ["Ocean View", "Swimming Pool", "Gym", "24/7 Security", "Parking", "Balcony"],
+    frontage: "25 feet",
+    depth: "45 feet",
+    nearby: ["Universal Society"],
+    description: "Cozy residential plot located in Mortha, Ghaziabad. This property offers the perfect size for building your dream home with 100 gaj of area. With a frontage of 25 feet and depth of 45 feet, this plot provides a comfortable building space in a residential area. Close proximity to Universal Society makes this an ideal location for families looking for a peaceful neighborhood.",
+    amenities: ["Residential Area", "Water Connection", "Electricity", "Security", "Nearby Amenities"],
     agent: {
-      name: "Sarah Williams",
+      name: "Rahul Sharma",
       phone: "+9911288282",
       whatsapp: "+9911288282",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
     }
   }
 ];
@@ -162,7 +165,7 @@ const PropertyDetailPage = () => {
               <CardContent className="p-6">
                 <div className="flex flex-wrap justify-between mb-6 pb-6 border-b">
                   <div className="mb-4 md:mb-0">
-                    <h3 className="text-2xl font-bold text-primary">{property.price}</h3>
+                    <h3 className="text-2xl font-bold text-primary">{property.hidePrice ? "Contact for Price" : property.price}</h3>
                     <p className="text-gray-600">{property.size} gaj</p>
                   </div>
                   <div>
@@ -250,7 +253,7 @@ const PropertyDetailPage = () => {
                 <div className="space-y-4">
                   <Button className="w-full flex items-center justify-center gap-2" asChild>
                     <a href={`tel:${property.agent.phone}`}>
-                      <Phone size={16} /> Call Agent
+                      <Phone size={16} /> Call Now
                     </a>
                   </Button>
                   

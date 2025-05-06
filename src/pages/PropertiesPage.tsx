@@ -11,77 +11,53 @@ const PropertiesPage = () => {
   const allProperties: PropertyProps[] = [
     {
       id: 1,
-      title: "Modern Villa with Pool",
+      title: "A1 Property",
       image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       price: "$1,250,000",
-      location: "Beverly Hills, CA",
-      size: "5000",
-      type: "Residential",
-      featured: true
+      location: "Raj Nagar Extension, Ghaziabad",
+      size: "12420",
+      type: "Commercial",
+      featured: true,
+      frontage: "60 feet",
+      depth: "207 feet",
+      nearby: ["DPS Public School", "St.Xavier School", "Hrit University", "Metro Station"]
     },
     {
       id: 2,
-      title: "Downtown Office Space",
-      image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      price: "$750,000",
-      location: "Manhattan, NY",
-      size: "2500",
+      title: "A2 Property",
+      image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      price: "$1,850,000",
+      location: "Raj Nagar Extension, Ghaziabad",
+      size: "6100",
       type: "Commercial",
-      featured: true
+      featured: true,
+      frontage: "250 feet",
+      depth: "250 feet",
+      nearby: ["DPS Public School", "St.Xavier School", "Hrit University", "Metro Station"]
     },
     {
       id: 3,
-      title: "Warehouse with Loading Docks",
+      title: "A3 Property",
       image: "https://images.unsplash.com/photo-1553970541-039c88965124?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      price: "$2,500,000",
-      location: "Houston, TX",
-      size: "25000",
-      type: "Industrial"
+      hidePrice: true,
+      location: "Raj Nagar Extension Face 2nd, Ghaziabad",
+      size: "23000",
+      type: "Industrial",
+      frontage: "400 feet",
+      depth: "550 feet",
+      nearby: ["Petrol Pump", "Government Companies"]
     },
     {
       id: 4,
-      title: "Beachfront Apartment",
+      title: "A4 Property",
       image: "https://images.unsplash.com/photo-1560448204-603b3fc33ddc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      price: "$950,000",
-      location: "Miami, FL",
-      size: "1800",
-      type: "Residential"
-    },
-    {
-      id: 5,
-      title: "Luxury Condo with City Views",
-      image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      price: "$1,800,000",
-      location: "Chicago, IL",
-      size: "3200",
-      type: "Residential"
-    },
-    {
-      id: 6,
-      title: "Retail Space in Shopping Mall",
-      image: "https://images.unsplash.com/photo-1604709177225-055f99402ea3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      price: "$530,000",
-      location: "Los Angeles, CA",
-      size: "1500",
-      type: "Commercial"
-    },
-    {
-      id: 7,
-      title: "Manufacturing Facility",
-      image: "https://images.unsplash.com/photo-1565636252330-1a562257c17b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      price: "$3,200,000",
-      location: "Detroit, MI",
-      size: "40000",
-      type: "Industrial"
-    },
-    {
-      id: 8,
-      title: "Single Family Home",
-      image: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      price: "$680,000",
-      location: "Austin, TX",
-      size: "2800",
-      type: "Residential"
+      price: "$250,000",
+      location: "Mortha, Ghaziabad",
+      size: "100",
+      type: "Residential",
+      frontage: "25 feet",
+      depth: "45 feet",
+      nearby: ["Universal Society"]
     }
   ];
 
@@ -118,7 +94,8 @@ const PropertiesPage = () => {
     
     // Apply price filter (convert price string to number)
     result = result.filter(prop => {
-      const propPrice = parseInt(prop.price.replace(/\$|,/g, ''));
+      if (prop.hidePrice) return true; // Include properties with hidden price
+      const propPrice = parseInt((prop.price || "0").replace(/\$|,/g, ''));
       return propPrice >= priceRange[0] && propPrice <= priceRange[1];
     });
     

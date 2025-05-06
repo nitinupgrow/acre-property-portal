@@ -19,11 +19,8 @@ const Navigation = () => {
           <img 
             src="/lovable-uploads/873211f9-13ba-4123-b2e3-ab3e938ed6f5.png" 
             alt="90acre Logo" 
-            className="h-10 mr-2" 
+            className="h-14" 
           />
-          <span className="text-2xl font-bold text-primary font-playfair">
-            90<span className="text-accent">acre</span>
-          </span>
         </Link>
         
         {/* Desktop Navigation */}

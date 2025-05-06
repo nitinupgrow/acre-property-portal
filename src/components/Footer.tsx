@@ -10,9 +10,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 font-playfair">
-              90<span className="text-accent">acre</span>
-            </h3>
+            <div className="mb-4">
+              <img 
+                src="/lovable-uploads/873211f9-13ba-4123-b2e3-ab3e938ed6f5.png" 
+                alt="90acre Logo" 
+                className="h-16" 
+              />
+            </div>
             <p className="mb-4 text-gray-200">
               Your trusted real estate partner for buying, selling and investing in properties.
             </p>
@@ -86,14 +90,14 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={18} />
-                <a href="tel:+123456789" className="hover:text-accent transition-colors">
-                  +1 (234) 567-8901
+                <a href="tel:+9911288282" className="hover:text-accent transition-colors">
+                  +9911288282
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={18} />
-                <a href="mailto:info@90acre.com" className="hover:text-accent transition-colors">
-                  info@90acre.com
+                <a href="mailto:contact@90acre.com" className="hover:text-accent transition-colors">
+                  contact@90acre.com
                 </a>
               </li>
             </ul>
