@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
-import { X, Menu, Phone } from "lucide-react";
+import { X, Menu, Phone, List } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +19,7 @@ const Navigation = () => {
           <img 
             src="/lovable-uploads/873211f9-13ba-4123-b2e3-ab3e938ed6f5.png" 
             alt="90acre Logo" 
-            className="h-14" 
+            className="h-16" 
           />
         </Link>
         
@@ -42,8 +42,13 @@ const Navigation = () => {
           </Link>
         </nav>
         
-        {/* Contact Button */}
-        <div className="hidden md:flex items-center">
+        {/* Contact Buttons */}
+        <div className="hidden md:flex items-center space-x-3">
+          <Button className="bg-primary hover:bg-primary/90 flex items-center gap-2" variant="default" asChild>
+            <Link to="/contact">
+              <List size={16} /> List a Property
+            </Link>
+          </Button>
           <Button className="btn-accent flex items-center gap-2" asChild>
             <a href="tel:+9911288282">
               <Phone size={16} /> Call Now
@@ -98,6 +103,11 @@ const Navigation = () => {
             >
               Contact
             </Link>
+            <Button className="bg-primary hover:bg-primary/90 flex items-center gap-2 w-full justify-center" asChild>
+              <Link to="/contact">
+                <List size={16} /> List a Property
+              </Link>
+            </Button>
             <Button className="btn-accent flex items-center gap-2 w-full justify-center" asChild>
               <a href="tel:+9911288282">
                 <Phone size={16} /> Call Now

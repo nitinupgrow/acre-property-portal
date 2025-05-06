@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -6,21 +7,21 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 const slides = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80",
-    title: "Find Your Dream Home",
-    description: "Browse our exclusive selection of premium properties."
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+    title: "Premium Plots Available",
+    description: "Invest in high-value properties at prime locations in Ghaziabad."
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
-    title: "Luxury Living",
-    description: "Experience the finest real estate opportunities in prime locations."
+    image: "https://images.unsplash.com/photo-1553970541-039c88965124?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+    title: "Commercial Properties",
+    description: "Discover excellent business opportunities with our commercial plots."
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
-    title: "Investment Opportunities",
-    description: "Discover high-value properties with excellent growth potential."
+    image: "https://images.unsplash.com/photo-1560448204-603b3fc33ddc?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+    title: "Residential Plots",
+    description: "Build your dream home on our premium residential plots."
   }
 ];
 

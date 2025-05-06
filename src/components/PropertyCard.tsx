@@ -8,8 +8,8 @@ export interface PropertyProps {
   id: number;
   title: string;
   image: string;
-  price?: string; // Make price optional to allow hiding
-  hidePrice?: boolean; // Add option to hide price
+  price?: string; // Keep price optional but we'll hide it
+  hidePrice?: boolean; // This will be set to true for all properties
   location: string;
   size: string;
   type: 'Residential' | 'Commercial' | 'Industrial';
@@ -33,11 +33,6 @@ const PropertyCard = ({ property }: { property: PropertyProps }) => {
           {property.featured && (
             <div className="absolute top-0 right-0 bg-accent text-black font-bold py-1 px-3 text-sm">
               Featured
-            </div>
-          )}
-          {!property.hidePrice && property.price && (
-            <div className="absolute bottom-0 left-0 bg-primary text-white font-bold py-1 px-3">
-              {property.price}
             </div>
           )}
         </Link>

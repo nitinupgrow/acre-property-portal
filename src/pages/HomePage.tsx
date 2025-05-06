@@ -16,8 +16,9 @@ const HomePage = () => {
       title: "A1 Property",
       image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       price: "$1,250,000",
+      hidePrice: true,
       location: "Raj Nagar Extension, Ghaziabad",
-      size: "12420",
+      size: "1380",
       frontage: "60 feet",
       depth: "207 feet",
       nearby: ["DPS Public School", "St.Xavier School", "Hrit University", "Metro Station"],
@@ -29,6 +30,7 @@ const HomePage = () => {
       title: "A2 Property",
       image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       price: "$1,850,000",
+      hidePrice: true,
       location: "Raj Nagar Extension, Ghaziabad",
       size: "6100",
       frontage: "250 feet",
@@ -55,6 +57,7 @@ const HomePage = () => {
       title: "A4 Property",
       image: "https://images.unsplash.com/photo-1560448204-603b3fc33ddc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       price: "$250,000",
+      hidePrice: true,
       location: "Mortha, Ghaziabad",
       size: "100",
       frontage: "25 feet",
@@ -106,11 +109,6 @@ const HomePage = () => {
                 subtitle="Visit us at our main office"
               />
               <GoogleMap />
-              <div className="mt-4 bg-secondary p-4 rounded-lg">
-                <p className="font-medium">90acre Real Estate</p>
-                <p>123 Real Estate Avenue, Property City, 12345</p>
-                <p>Email: contact@90acre.com | Phone: +9911288282</p>
-              </div>
             </div>
           </div>
         </div>
