@@ -36,45 +36,53 @@ const properties = [
   },
   {
     id: 2,
-    title: "Downtown Office Space",
+    title: "A2 Property",
     images: [
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1568992688065-536aad8a12f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     ],
-    price: "$750,000",
-    location: "Manhattan, NY",
-    size: "2500",
-    type: "Commercial",
+    price: "$1,850,000",
+    location: "Raj Nagar Extension, Ghaziabad",
+    size: "6100",
+    type: "Residential",
     featured: true,
-    description: "Prime commercial office space in the heart of Manhattan, ideal for businesses looking for a prestigious address. Modern amenities and excellent connectivity make this property a great investment option.",
-    amenities: ["Reception Area", "Conference Rooms", "High-Speed Internet", "Parking", "Security", "HVAC"],
+    frontage: "250 feet",
+    depth: "250 feet",
+    nearby: ["DPS Public School", "St.Xavier School", "Hrit University", "Metro Station"],
+    description: "A prestigious residential plot situated in the prime location of Raj Nagar Extension, Ghaziabad. This exceptional property features an impressive frontage of 250 feet and depth of 250 feet, providing abundant space for custom home building. The property enjoys close proximity to top educational institutions and convenient access to transportation, making it an ideal investment for families.",
+    amenities: ["Prime Location", "Wide Roads", "Gated Community", "24/7 Security", "Water Supply", "Electricity", "Park View"],
     agent: {
-      name: "John Smith",
+      name: "Rahul Sharma",
       phone: "+9911288282",
       whatsapp: "+9911288282",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
     }
   },
   {
     id: 3,
-    title: "Warehouse with Loading Docks",
+    title: "Industrial Plot",
     images: [
       "https://images.unsplash.com/photo-1553970541-039c88965124?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     ],
-    price: "$2,500,000",
-    location: "Houston, TX",
-    size: "25000",
+    price: "Contact for Price",
+    hidePrice: true,
+    location: "Raj Nagar Extension Face 2nd, Ghaziabad",
+    size: "23000",
     type: "Industrial",
-    description: "Spacious warehouse facility with modern loading docks, perfect for logistics and manufacturing businesses. Strategically located for easy highway access and transportation.",
-    amenities: ["Loading Docks", "High Ceiling", "Security System", "Office Space", "Truck Parking", "Fire Protection"],
+    featured: true,
+    frontage: "400 feet",
+    depth: "550 feet",
+    nearby: ["Petrol Pump", "Government Companies"],
+    description: "A premium industrial plot located in Raj Nagar Extension Face 2nd, Ghaziabad. With an extensive area of 23000 gaj and impressive dimensions of 400 feet frontage and 550 feet depth, this property is ideal for various industrial applications. Strategically positioned near essential facilities including a petrol pump and government companies, this plot offers excellent potential for business development and commercial success.",
+    amenities: ["Wide Roads", "Security", "Power Supply", "Water Connection", "Strategic Location", "Commercial Area"],
     agent: {
-      name: "Robert Johnson",
+      name: "Rahul Sharma",
       phone: "+9911288282",
       whatsapp: "+9911288282",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
     }
   },
   {
