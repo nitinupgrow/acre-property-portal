@@ -16,6 +16,11 @@ const Navigation = () => {
       <div className="container-custom py-4 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center">
+          <img 
+            src="/lovable-uploads/873211f9-13ba-4123-b2e3-ab3e938ed6f5.png" 
+            alt="90acre Logo" 
+            className="h-10 mr-2" 
+          />
           <span className="text-2xl font-bold text-primary font-playfair">
             90<span className="text-accent">acre</span>
           </span>
@@ -43,7 +48,7 @@ const Navigation = () => {
         {/* Contact Button */}
         <div className="hidden md:flex items-center">
           <Button className="btn-accent flex items-center gap-2" asChild>
-            <a href="tel:+123456789">
+            <a href="tel:+9911288282">
               <Phone size={16} /> Call Now
             </a>
           </Button>
@@ -97,7 +102,7 @@ const Navigation = () => {
               Contact
             </Link>
             <Button className="btn-accent flex items-center gap-2 w-full justify-center" asChild>
-              <a href="tel:+123456789">
+              <a href="tel:+9911288282">
                 <Phone size={16} /> Call Now
               </a>
             </Button>

@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { MapPin, Home } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export interface PropertyProps {
   id: number;
@@ -12,11 +13,14 @@ export interface PropertyProps {
   size: string;
   type: 'Residential' | 'Commercial' | 'Industrial';
   featured?: boolean;
+  frontage?: string;
+  depth?: string;
+  nearby?: string[];
 }
 
 const PropertyCard = ({ property }: { property: PropertyProps }) => {
   return (
-    <div className="property-card hover-scale">
+    <Link to={`/properties/${property.id}`} className="property-card hover-scale block">
       {/* Property Image */}
       <div className="relative h-52 overflow-hidden">
         <img 
@@ -51,10 +55,10 @@ const PropertyCard = ({ property }: { property: PropertyProps }) => {
           </span>
         </div>
         <Button className="w-full" variant="default">
-          Contact Agent
+          View Details
         </Button>
       </div>
-    </div>
+    </Link>
   );
 };
 

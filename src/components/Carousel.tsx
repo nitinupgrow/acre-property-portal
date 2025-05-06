@@ -1,26 +1,26 @@
-
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 const slides = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80',
-    title: 'Find Your Dream Home',
-    description: 'Browse our exclusive selection of premium properties.'
+    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80",
+    title: "Find Your Dream Home",
+    description: "Browse our exclusive selection of premium properties."
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
-    title: 'Luxury Living',
-    description: 'Experience the finest real estate opportunities in prime locations.'
+    image: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+    title: "Luxury Living",
+    description: "Experience the finest real estate opportunities in prime locations."
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
-    title: 'Investment Opportunities',
-    description: 'Discover high-value properties with excellent growth potential.'
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+    title: "Investment Opportunities",
+    description: "Discover high-value properties with excellent growth potential."
   }
 ];
 
@@ -69,10 +69,10 @@ const Carousel = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button className="bg-accent hover:bg-accent/90 text-black font-bold text-lg py-6 px-8" asChild>
-                  <a href="/properties">Browse Properties</a>
+                  <Link to="/properties">Browse Properties</Link>
                 </Button>
                 <Button className="bg-transparent hover:bg-white/10 text-white border border-white font-bold text-lg py-6 px-8" variant="outline" asChild>
-                  <a href="/contact">Contact Us</a>
+                  <Link to="/contact">Contact Us</Link>
                 </Button>
               </div>
             </div>

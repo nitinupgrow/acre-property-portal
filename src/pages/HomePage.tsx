@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Carousel from '@/components/Carousel';
 import SectionHeading from '@/components/SectionHeading';
 import PropertyCard, { PropertyProps } from '@/components/PropertyCard';
@@ -12,11 +13,14 @@ const HomePage = () => {
   const [featuredProperties] = useState<PropertyProps[]>([
     {
       id: 1,
-      title: "Modern Villa with Pool",
+      title: "A1 Property",
       image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       price: "$1,250,000",
-      location: "Beverly Hills, CA",
-      size: "5000",
+      location: "Raj Nagar Extension, Ghaziabad",
+      size: "12420",
+      frontage: "60 feet",
+      depth: "207 feet",
+      nearby: ["DPS Public School", "St.Xavier School", "Hrit University", "Metro Station"],
       type: "Residential",
       featured: true
     },
@@ -95,7 +99,7 @@ const HomePage = () => {
               <div className="mt-4 bg-secondary p-4 rounded-lg">
                 <p className="font-medium">90acre Real Estate</p>
                 <p>123 Real Estate Avenue, Property City, 12345</p>
-                <p>Email: info@90acre.com | Phone: +1 (234) 567-8901</p>
+                <p>Email: info@90acre.com | Phone: +9911288282</p>
               </div>
             </div>
           </div>
@@ -108,18 +112,18 @@ const HomePage = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 font-playfair">Ready to Find Your Perfect Property?</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">Whether you're looking to buy, sell, or invest, our team of experts is here to guide you through every step of the process.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/properties"
+            <Link
+              to="/properties"
               className="btn-accent text-center py-3 px-8 rounded-md font-bold text-black"
             >
               Browse Properties
-            </a>
-            <a
-              href="/contact"
+            </Link>
+            <Link
+              to="/contact"
               className="border-2 border-white text-center py-3 px-8 rounded-md font-bold hover:bg-white/10 transition-colors"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </section>

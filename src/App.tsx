@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import PropertiesPage from "./pages/PropertiesPage";
+import PropertyDetailPage from "./pages/PropertyDetailPage";
 import ContactPage from "./pages/ContactPage";
 import TeamPage from "./pages/TeamPage";
 import NotFound from "./pages/NotFound";
@@ -28,6 +29,7 @@ const App = () => (
               <Route path="/" element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/properties" element={<PropertiesPage />} />
+              <Route path="/properties/:id" element={<PropertyDetailPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/team" element={<TeamPage />} />
               <Route path="*" element={<NotFound />} />
