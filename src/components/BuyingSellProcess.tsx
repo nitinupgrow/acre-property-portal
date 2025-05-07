@@ -2,7 +2,7 @@
 import React from 'react';
 import SectionHeading from './SectionHeading';
 import { Card, CardContent } from '@/components/ui/card';
-import { Cube, Lock, Maximize, Minimize } from 'lucide-react';
+import { Home, Lock, Maximize, Minimize } from 'lucide-react';
 
 const BuyingSellProcess = () => {
   const steps = [
@@ -20,7 +20,7 @@ const BuyingSellProcess = () => {
       description: "Find your dream property or list your property with us.",
       icon: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       color: "from-amber-500 to-orange-600",
-      lucideIcon: <Cube size={24} className="text-white" />
+      lucideIcon: <Home size={24} className="text-white" />
     },
     {
       id: 3,
