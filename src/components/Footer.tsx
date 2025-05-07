@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Home, Info, Users, Search } from "lucide-react";
@@ -10,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <div className="mb-4">
+            <div className="mb-4 transform transition-all hover:scale-110 duration-300">
               <img 
                 src="/lovable-uploads/873211f9-13ba-4123-b2e3-ab3e938ed6f5.png" 
                 alt="90acre Logo" 
@@ -53,27 +52,27 @@ const Footer = () => {
             <h4 className="text-xl font-bold mb-4 font-playfair">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-gray-200 hover:text-accent transition-colors flex items-center gap-2">
+                <Link to="/" className="text-gray-200 hover:text-accent transition-colors flex items-center gap-2 transform hover:translate-x-2 duration-300">
                   <Home size={16} /> Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-gray-200 hover:text-accent transition-colors flex items-center gap-2">
+                <Link to="/about" className="text-gray-200 hover:text-accent transition-colors flex items-center gap-2 transform hover:translate-x-2 duration-300">
                   <Info size={16} /> About Us
                 </Link>
               </li>
               <li>
-                <Link to="/properties" className="text-gray-200 hover:text-accent transition-colors flex items-center gap-2">
+                <Link to="/properties" className="text-gray-200 hover:text-accent transition-colors flex items-center gap-2 transform hover:translate-x-2 duration-300">
                   <Search size={16} /> Properties
                 </Link>
               </li>
               <li>
-                <Link to="/team" className="text-gray-200 hover:text-accent transition-colors flex items-center gap-2">
+                <Link to="/team" className="text-gray-200 hover:text-accent transition-colors flex items-center gap-2 transform hover:translate-x-2 duration-300">
                   <Users size={16} /> Our Team
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-200 hover:text-accent transition-colors flex items-center gap-2">
+                <Link to="/contact" className="text-gray-200 hover:text-accent transition-colors flex items-center gap-2 transform hover:translate-x-2 duration-300">
                   <Mail size={16} /> Contact
                 </Link>
               </li>
@@ -84,13 +83,13 @@ const Footer = () => {
           <div>
             <h4 className="text-xl font-bold mb-4 font-playfair">Contact Info</h4>
             <ul className="space-y-3">
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 transform hover:translate-x-2 duration-300">
                 <Phone size={18} />
                 <a href="tel:+919911288282" className="hover:text-accent transition-colors">
                   +91 9911288282
                 </a>
               </li>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 transform hover:translate-x-2 duration-300">
                 <Mail size={18} />
                 <a href="mailto:contact@90acre.com" className="hover:text-accent transition-colors">
                   contact@90acre.com
@@ -109,11 +108,11 @@ const Footer = () => {
               <input 
                 type="email" 
                 placeholder="Your email address" 
-                className="w-full px-4 py-2 rounded bg-primary-foreground text-primary outline-none focus:ring-2 focus:ring-accent"
+                className="w-full px-4 py-2 rounded bg-primary-foreground text-primary outline-none focus:ring-2 focus:ring-accent transform hover:scale-105 duration-300"
               />
               <button 
                 type="submit" 
-                className="w-full py-2 px-4 bg-accent text-white rounded hover:bg-accent/90 transition-colors"
+                className="w-full py-2 px-4 bg-accent text-white rounded hover:bg-accent/90 transition-colors transform hover:scale-105 duration-300"
               >
                 Subscribe
               </button>

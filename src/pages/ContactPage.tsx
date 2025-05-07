@@ -5,6 +5,7 @@ import GoogleMap from '@/components/GoogleMap';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
 import { Phone, Mail, MapPin, Users } from 'lucide-react';
+import { ScrollArea } from '@/components/ui/scroll-area';
 
 const ContactPage = () => {
   const { toast } = useToast();
@@ -40,21 +41,21 @@ const ContactPage = () => {
               
               {/* Contact Cards */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow transform hover:scale-105 duration-300">
                   <Phone size={36} className="text-accent mb-4" />
                   <h3 className="text-xl font-bold mb-2">Call Us</h3>
                   <p className="text-gray-600 mb-3">Our team is available to assist you.</p>
-                  <a href="tel:+1234567890" className="text-primary hover:text-accent transition-colors font-medium">+1 (234) 567-8901</a>
+                  <a href="tel:+919911288282" className="text-primary hover:text-accent transition-colors font-medium">+91 9911288282</a>
                 </div>
                 
-                <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow transform hover:scale-105 duration-300">
                   <Mail size={36} className="text-accent mb-4" />
                   <h3 className="text-xl font-bold mb-2">Email Us</h3>
                   <p className="text-gray-600 mb-3">Send us a message anytime.</p>
-                  <a href="mailto:info@90acre.com" className="text-primary hover:text-accent transition-colors font-medium">info@90acre.com</a>
+                  <a href="mailto:contact@90acre.com" className="text-primary hover:text-accent transition-colors font-medium">contact@90acre.com</a>
                 </div>
                 
-                <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow transform hover:scale-105 duration-300">
                   <MapPin size={36} className="text-accent mb-4" />
                   <h3 className="text-xl font-bold mb-2">Visit Us</h3>
                   <p className="text-gray-600 mb-3">Our main office location:</p>
@@ -64,7 +65,7 @@ const ContactPage = () => {
                   </address>
                 </div>
                 
-                <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow transform hover:scale-105 duration-300">
                   <Users size={36} className="text-accent mb-4" />
                   <h3 className="text-xl font-bold mb-2">Social Media</h3>
                   <p className="text-gray-600 mb-3">Connect with us online:</p>
@@ -100,8 +101,8 @@ const ContactPage = () => {
               {/* WhatsApp Button */}
               <div className="mb-8">
                 <a 
-                  href="https://wa.me/1234567890" 
-                  className="flex items-center bg-green-500 text-white py-3 px-6 rounded-md hover:bg-green-600 transition-colors w-full sm:w-auto justify-center"
+                  href="https://wa.me/919911288282" 
+                  className="flex items-center bg-green-500 text-white py-3 px-6 rounded-md hover:bg-green-600 transition-colors w-full sm:w-auto justify-center transform hover:scale-105 duration-300"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -118,7 +119,7 @@ const ContactPage = () => {
               </div>
               
               {/* Office Hours */}
-              <div className="bg-secondary p-6 rounded-lg">
+              <div className="bg-secondary p-6 rounded-lg shadow-lg transform hover:scale-105 duration-300">
                 <h3 className="text-xl font-bold mb-4">Office Hours</h3>
                 <ul className="space-y-2">
                   <li className="flex justify-between">
@@ -140,79 +141,81 @@ const ContactPage = () => {
             <div>
               <SectionHeading title="Send Us a Message" />
               {/* Contact Form */}
-              <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                      Full Name *
-                    </label>
-                    <input
-                      id="name"
-                      type="text"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none"
-                      placeholder="John Doe"
-                      required
-                    />
+              <ScrollArea className="h-[600px] rounded-md">
+                <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div className="group">
+                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1 group-hover:text-primary transition-colors">
+                        Full Name *
+                      </label>
+                      <input
+                        id="name"
+                        type="text"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none group-hover:border-primary transition-colors"
+                        placeholder="John Doe"
+                        required
+                      />
+                    </div>
+                    
+                    <div className="group">
+                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1 group-hover:text-primary transition-colors">
+                        Email Address *
+                      </label>
+                      <input
+                        id="email"
+                        type="email"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none group-hover:border-primary transition-colors"
+                        placeholder="john@example.com"
+                        required
+                      />
+                    </div>
                   </div>
                   
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                      Email Address *
-                    </label>
-                    <input
-                      id="email"
-                      type="email"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none"
-                      placeholder="john@example.com"
-                      required
-                    />
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                      Phone Number
-                    </label>
-                    <input
-                      id="phone"
-                      type="tel"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none"
-                      placeholder="+1 (234) 567-8901"
-                    />
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div className="group">
+                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1 group-hover:text-primary transition-colors">
+                        Phone Number
+                      </label>
+                      <input
+                        id="phone"
+                        type="tel"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none group-hover:border-primary transition-colors"
+                        placeholder="+91 9911288282"
+                      />
+                    </div>
+                    
+                    <div className="group">
+                      <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1 group-hover:text-primary transition-colors">
+                        Subject *
+                      </label>
+                      <input
+                        id="subject"
+                        type="text"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none group-hover:border-primary transition-colors"
+                        placeholder="Property Inquiry"
+                        required
+                      />
+                    </div>
                   </div>
                   
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
-                      Subject *
+                  <div className="mb-4 group">
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1 group-hover:text-primary transition-colors">
+                      Message *
                     </label>
-                    <input
-                      id="subject"
-                      type="text"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none"
-                      placeholder="Property Inquiry"
+                    <textarea
+                      id="message"
+                      rows={5}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none group-hover:border-primary transition-colors"
+                      placeholder="Please write your message here..."
                       required
-                    />
+                    ></textarea>
                   </div>
-                </div>
-                
-                <div className="mb-4">
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                    Message *
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={5}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:outline-none"
-                    placeholder="Please write your message here..."
-                    required
-                  ></textarea>
-                </div>
-                
-                <Button type="submit" className="btn-primary w-full">
-                  Send Message
-                </Button>
-              </form>
+                  
+                  <Button type="submit" className="btn-primary w-full transform hover:scale-105 duration-300">
+                    Send Message
+                  </Button>
+                </form>
+              </ScrollArea>
             </div>
           </div>
         </div>
@@ -226,10 +229,12 @@ const ContactPage = () => {
             subtitle="Visit our main office"
             centered={true}
           />
-          <GoogleMap />
-          <div className="mt-4 bg-white p-4 rounded-lg text-center">
-            <p className="font-medium">90acre Real Estate</p>
-            <p>123 Real Estate Avenue, Property City, 12345</p>
+          <div className="transform hover:scale-105 duration-300">
+            <GoogleMap />
+            <div className="mt-4 bg-white p-4 rounded-lg text-center">
+              <p className="font-medium">90acre Real Estate</p>
+              <p>123 Real Estate Avenue, Property City, 12345</p>
+            </div>
           </div>
         </div>
       </section>

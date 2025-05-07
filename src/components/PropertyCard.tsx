@@ -41,7 +41,7 @@ const PropertyCard = ({ property }: { property: PropertyProps }) => {
       {/* Property Details */}
       <div className="p-4 shadow-md rounded-b-lg">
         <Link to={`/properties/${property.id}`}>
-          <h3 className="text-lg font-bold mb-2">{property.title}</h3>
+          <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors">{property.title}</h3>
           <div className="flex items-center text-gray-500 mb-2">
             <MapPin size={16} className="mr-1" />
             <span className="text-sm">{property.location}</span>
@@ -58,12 +58,12 @@ const PropertyCard = ({ property }: { property: PropertyProps }) => {
         </Link>
         
         <div className="flex flex-col gap-2">
-          <Button className="w-full flex items-center justify-center gap-2" asChild>
+          <Button className="w-full flex items-center justify-center gap-2 transform transition-all duration-300 hover:scale-105" asChild>
             <a href="tel:+919911288282">
               <Phone size={16} /> Call Now
             </a>
           </Button>
-          <Button className="w-full flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700" asChild>
+          <Button className="w-full flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 transform transition-all duration-300 hover:scale-105" asChild>
             <a href="https://wa.me/919911288282" target="_blank" rel="noopener noreferrer">
               <MessageCircle size={16} /> Chat Now
             </a>
