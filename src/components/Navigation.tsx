@@ -19,7 +19,7 @@ const Navigation = () => {
           <img 
             src="/lovable-uploads/873211f9-13ba-4123-b2e3-ab3e938ed6f5.png" 
             alt="90acre Logo" 
-            className="h-16" 
+            className="h-20" 
           />
         </Link>
         
@@ -50,7 +50,7 @@ const Navigation = () => {
             </Link>
           </Button>
           <Button className="btn-accent flex items-center gap-2" asChild>
-            <a href="tel:+9911288282">
+            <a href="tel:+919911288282">
               <Phone size={16} /> Call Now
             </a>
           </Button>
@@ -104,12 +104,12 @@ const Navigation = () => {
               Contact
             </Link>
             <Button className="bg-primary hover:bg-primary/90 flex items-center gap-2 w-full justify-center" asChild>
-              <Link to="/contact">
+              <Link to="/contact" onClick={toggleMenu}>
                 <List size={16} /> List a Property
               </Link>
             </Button>
             <Button className="btn-accent flex items-center gap-2 w-full justify-center" asChild>
-              <a href="tel:+9911288282">
+              <a href="tel:+919911288282">
                 <Phone size={16} /> Call Now
               </a>
             </Button>

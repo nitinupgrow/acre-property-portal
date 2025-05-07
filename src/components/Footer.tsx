@@ -14,7 +14,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/873211f9-13ba-4123-b2e3-ab3e938ed6f5.png" 
                 alt="90acre Logo" 
-                className="h-16" 
+                className="h-24" 
               />
             </div>
             <p className="mb-4 text-gray-200">
@@ -84,14 +84,10 @@ const Footer = () => {
           <div>
             <h4 className="text-xl font-bold mb-4 font-playfair">Contact Info</h4>
             <ul className="space-y-3">
-              <li className="flex items-start gap-2">
-                <MapPin className="mt-1 flex-shrink-0" size={18} />
-                <span>123 Real Estate Ave, Property City, 12345</span>
-              </li>
               <li className="flex items-center gap-2">
                 <Phone size={18} />
-                <a href="tel:+9911288282" className="hover:text-accent transition-colors">
-                  +9911288282
+                <a href="tel:+919911288282" className="hover:text-accent transition-colors">
+                  +91 9911288282
                 </a>
               </li>
               <li className="flex items-center gap-2">

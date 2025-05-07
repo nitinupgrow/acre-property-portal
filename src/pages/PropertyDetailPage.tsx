@@ -19,7 +19,7 @@ const properties = [
     ],
     price: "$1,250,000",
     location: "Raj Nagar Extension, Ghaziabad",
-    size: "12420",
+    size: "1380",
     type: "Commercial",
     featured: true,
     frontage: "60 feet",
@@ -29,8 +29,8 @@ const properties = [
     amenities: ["Corner Plot", "Wide Roads", "Gated Community", "24/7 Security", "Water Supply", "Electricity"],
     agent: {
       name: "Rahul Sharma",
-      phone: "+9911288282",
-      whatsapp: "+9911288282",
+      phone: "+919911288282",
+      whatsapp: "+919911288282",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
     }
   },
@@ -54,8 +54,8 @@ const properties = [
     amenities: ["Prime Location", "Wide Roads", "Gated Community", "24/7 Security", "Water Supply", "Electricity", "Park View"],
     agent: {
       name: "Rahul Sharma",
-      phone: "+9911288282",
-      whatsapp: "+9911288282",
+      phone: "+919911288282",
+      whatsapp: "+919911288282",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
     }
   },
@@ -80,8 +80,8 @@ const properties = [
     amenities: ["Wide Roads", "Security", "Power Supply", "Water Connection", "Strategic Location", "Commercial Area"],
     agent: {
       name: "Rahul Sharma",
-      phone: "+9911288282",
-      whatsapp: "+9911288282",
+      phone: "+919911288282",
+      whatsapp: "+919911288282",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
     }
   },
@@ -104,8 +104,8 @@ const properties = [
     amenities: ["Residential Area", "Water Connection", "Electricity", "Security", "Nearby Amenities"],
     agent: {
       name: "Rahul Sharma",
-      phone: "+9911288282",
-      whatsapp: "+9911288282",
+      phone: "+919911288282",
+      whatsapp: "+919911288282",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
     }
   }

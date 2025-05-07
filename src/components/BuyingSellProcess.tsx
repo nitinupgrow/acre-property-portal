@@ -30,7 +30,7 @@ const BuyingSellProcess = () => {
       id: 4,
       title: "Closing",
       description: "Complete the transaction and receive/transfer ownership.",
-      icon: "https://images.unsplash.com/photo-1560518883-b2e208a3a11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      icon: "https://images.unsplash.com/photo-1560518883-b2e2208a3a11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       color: "from-purple-500 to-fuchsia-600"
     },
   ];
