@@ -20,6 +20,9 @@ export interface PropertyProps {
 }
 
 const PropertyCard = ({ property }: { property: PropertyProps }) => {
+  // Force hidePrice to be true for all properties
+  const propertyWithHiddenPrice = { ...property, hidePrice: true };
+  
   return (
     <div className="property-card hover-scale block">
       {/* Property Image */}

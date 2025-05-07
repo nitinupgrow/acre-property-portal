@@ -7,13 +7,14 @@ import { Slider } from '@/components/ui/slider';
 import { Filter, Search } from 'lucide-react';
 
 const PropertiesPage = () => {
-  // Sample property data
+  // Sample property data with updated A1 property image and all prices hidden
   const allProperties: PropertyProps[] = [
     {
       id: 1,
       title: "A1 Property",
-      image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: "/lovable-uploads/6227890b-5f78-4712-8ec0-39423d0ab5cb.png",
       price: "$1,250,000",
+      hidePrice: true,
       location: "Raj Nagar Extension, Ghaziabad",
       size: "12420",
       type: "Commercial",
@@ -27,6 +28,7 @@ const PropertiesPage = () => {
       title: "A2 Property",
       image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       price: "$1,850,000",
+      hidePrice: true,
       location: "Raj Nagar Extension, Ghaziabad",
       size: "6100",
       type: "Commercial",
@@ -52,6 +54,7 @@ const PropertiesPage = () => {
       title: "A4 Property",
       image: "https://images.unsplash.com/photo-1560448204-603b3fc33ddc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       price: "$250,000",
+      hidePrice: true,
       location: "Mortha, Ghaziabad",
       size: "100",
       type: "Residential",

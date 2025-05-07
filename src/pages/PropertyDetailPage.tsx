@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -7,17 +6,18 @@ import SectionHeading from '@/components/SectionHeading';
 import { MapPin, Home, Phone, MessageCircle, ArrowLeft } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
-// Mock property data - in a real app, you'd fetch this from an API
+// Mock property data - with updated A1 property image and all prices hidden
 const properties = [
   {
     id: 1,
     title: "A1 Property",
     images: [
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      "/lovable-uploads/6227890b-5f78-4712-8ec0-39423d0ab5cb.png",
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     ],
-    price: "$1,250,000",
+    price: "Contact for Price",
+    hidePrice: true,
     location: "Raj Nagar Extension, Ghaziabad",
     size: "1380",
     type: "Commercial",
@@ -42,7 +42,8 @@ const properties = [
       "https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     ],
-    price: "$1,850,000",
+    price: "Contact for Price",
+    hidePrice: true,
     location: "Raj Nagar Extension, Ghaziabad",
     size: "6100",
     type: "Commercial",
@@ -93,7 +94,8 @@ const properties = [
       "https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     ],
-    price: "$250,000",
+    price: "Contact for Price",
+    hidePrice: true,
     location: "Mortha, Ghaziabad",
     size: "100",
     type: "Residential",
@@ -165,7 +167,7 @@ const PropertyDetailPage = () => {
               <CardContent className="p-6">
                 <div className="flex flex-wrap justify-between mb-6 pb-6 border-b">
                   <div className="mb-4 md:mb-0">
-                    <h3 className="text-2xl font-bold text-primary">{property.hidePrice ? "Contact for Price" : property.price}</h3>
+                    <h3 className="text-2xl font-bold text-primary">Contact for Price</h3>
                     <p className="text-gray-600">{property.size} gaj</p>
                   </div>
                   <div>
