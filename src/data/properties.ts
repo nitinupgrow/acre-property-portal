@@ -1,4 +1,3 @@
-
 import { PropertyType } from "@/types/property";
 
 // Mock property data - with updated A1 property image and all prices hidden
@@ -7,7 +6,7 @@ export const properties: PropertyType[] = [
     id: 1,
     title: "A1 Property",
     images: [
-      "/lovable-uploads/855b95ef-e24b-438b-9275-a339eb7248c0.png",
+      "/lovable-uploads/0d57ac51-c8c5-4e2d-aa04-7079abec78dc.png",
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     ],
@@ -33,8 +32,7 @@ export const properties: PropertyType[] = [
     id: 2,
     title: "A2 Property",
     images: [
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      "/lovable-uploads/855b95ef-e24b-438b-9275-a339eb7248c0.png",
+      "/lovable-uploads/e406f4bf-f2be-4df4-91ad-6f16cfbfdd02.png",
       "https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     ],

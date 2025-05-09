@@ -12,7 +12,7 @@ const PropertiesPage = () => {
     {
       id: 1,
       title: "A1 Property",
-      image: "/lovable-uploads/855b95ef-e24b-438b-9275-a339eb7248c0.png",
+      image: "/lovable-uploads/0d57ac51-c8c5-4e2d-aa04-7079abec78dc.png",
       price: "$1,250,000",
       hidePrice: true,
       location: "Raj Nagar Extension, Ghaziabad",
@@ -26,7 +26,7 @@ const PropertiesPage = () => {
     {
       id: 2,
       title: "A2 Property",
-      image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: "/lovable-uploads/e406f4bf-f2be-4df4-91ad-6f16cfbfdd02.png",
       price: "$1,850,000",
       hidePrice: true,
       location: "Raj Nagar Extension, Ghaziabad",
