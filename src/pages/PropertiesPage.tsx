@@ -12,7 +12,7 @@ const PropertiesPage = () => {
     {
       id: 1,
       title: "A1 Property",
-      image: "/lovable-uploads/6227890b-5f78-4712-8ec0-39423d0ab5cb.png",
+      image: "/lovable-uploads/855b95ef-e24b-438b-9275-a339eb7248c0.png",
       price: "$1,250,000",
       hidePrice: true,
       location: "Raj Nagar Extension, Ghaziabad",

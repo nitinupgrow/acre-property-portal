@@ -7,7 +7,7 @@ export const properties: PropertyType[] = [
     id: 1,
     title: "A1 Property",
     images: [
-      "/lovable-uploads/6227890b-5f78-4712-8ec0-39423d0ab5cb.png",
+      "/lovable-uploads/855b95ef-e24b-438b-9275-a339eb7248c0.png",
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     ],
@@ -34,6 +34,7 @@ export const properties: PropertyType[] = [
     title: "A2 Property",
     images: [
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      "/lovable-uploads/855b95ef-e24b-438b-9275-a339eb7248c0.png",
       "https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     ],
