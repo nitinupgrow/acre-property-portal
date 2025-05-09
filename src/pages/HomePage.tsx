@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Carousel from '@/components/Carousel';
@@ -54,7 +55,7 @@ const HomePage = () => {
     {
       id: 4,
       title: "A4 Property",
-      image: "https://images.unsplash.com/photo-1560448204-603b3fc33ddc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: "/lovable-uploads/cb80c691-3b15-4b5f-bc1f-5a138c189857.png",
       price: "$250,000",
       hidePrice: true,
       location: "Mortha, Ghaziabad",

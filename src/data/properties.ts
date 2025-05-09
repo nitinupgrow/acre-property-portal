@@ -1,3 +1,4 @@
+
 import { PropertyType } from "@/types/property";
 
 // Mock property data - with updated A1 property image and all prices hidden
@@ -84,7 +85,7 @@ export const properties: PropertyType[] = [
     id: 4,
     title: "A4 Property",
     images: [
-      "https://images.unsplash.com/photo-1560448204-603b3fc33ddc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      "/lovable-uploads/cb80c691-3b15-4b5f-bc1f-5a138c189857.png",
       "https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     ],
